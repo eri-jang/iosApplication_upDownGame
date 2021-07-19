@@ -15,6 +15,7 @@
 		5989BD68269FF4F60021B2C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5989BD66269FF4F60021B2C2 /* LaunchScreen.storyboard */; };
 		5989BD73269FF4F60021B2C2 /* UpDownGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5989BD72269FF4F60021B2C2 /* UpDownGameTests.swift */; };
 		5989BD7E269FF4F60021B2C2 /* UpDownGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5989BD7D269FF4F60021B2C2 /* UpDownGameUITests.swift */; };
+		59A8988D26A571D500FADBDA /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8988C26A571D500FADBDA /* CreditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5989BD79269FF4F60021B2C2 /* UpDownGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDownGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5989BD7D269FF4F60021B2C2 /* UpDownGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownGameUITests.swift; sourceTree = "<group>"; };
 		5989BD7F269FF4F60021B2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59A8988C26A571D500FADBDA /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				5989BD5B269FF4F50021B2C2 /* AppDelegate.swift */,
 				5989BD5D269FF4F50021B2C2 /* SceneDelegate.swift */,
 				5989BD5F269FF4F50021B2C2 /* ViewController.swift */,
+				59A8988C26A571D500FADBDA /* CreditViewController.swift */,
 				5989BD61269FF4F50021B2C2 /* Main.storyboard */,
 				5989BD64269FF4F60021B2C2 /* Assets.xcassets */,
 				5989BD66269FF4F60021B2C2 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				5989BD60269FF4F50021B2C2 /* ViewController.swift in Sources */,
 				5989BD5C269FF4F50021B2C2 /* AppDelegate.swift in Sources */,
 				5989BD5E269FF4F50021B2C2 /* SceneDelegate.swift in Sources */,
+				59A8988D26A571D500FADBDA /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +438,7 @@
 		5989BD83269FF4F60021B2C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJS5F6Z72L;
@@ -452,6 +457,7 @@
 		5989BD84269FF4F60021B2C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJS5F6Z72L;
