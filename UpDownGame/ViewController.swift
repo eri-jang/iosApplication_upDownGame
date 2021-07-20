@@ -58,12 +58,12 @@ class ViewController: UIViewController {
         
         if randomValue == hitValue {
             //print("YOU HIT!")
-            showAlert(message: "YOU HIT!")
+            showAlert(message: "정답입니다!")
             reset()
             
         } else if tryCount >= 5 {
             //print("you lose...")
-            showAlert(message: "YOU lose...")
+            showAlert(message: "You lose..")
             reset()
         } else if randomValue > hitValue {
             slider.minimumValue = Float(hitValue)

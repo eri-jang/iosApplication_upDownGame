@@ -82,6 +82,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="C9Z-Oa-EZb" kind="presentation" modalTransitionStyle="crossDissolve" id="Oha-a5-xsY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Randow Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhj-k5-Sl5">
                                 <rect key="frame" x="239.66666666666663" y="20" width="365" height="37"/>
@@ -133,19 +136,82 @@
                     <view key="view" contentMode="scaleToFill" id="N87-6x-Cqe">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e49-x7-JeB">
+                                <rect key="frame" x="284" y="20" width="496" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">hello world!
+hi
+
+MyContent:
+http://google.com
+mail@mail.com
+aa
+aaa
+a
+aa
+a
+a
+a
+a
+a
+a
+a
+a
+a
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewa-co-QAU">
+                                <rect key="frame" x="64" y="20" width="21" height="22"/>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpDismissButton:" destination="C9Z-Oa-EZb" eventType="touchUpInside" id="6i2-yf-fxc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="kfE-VG-wAR">
+                                <rect key="frame" x="64" y="95" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GoK-vj-Va2"/>
+                                    <constraint firstAttribute="height" constant="200" id="t1V-Ux-rMc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MjP-PN-g7j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ewa-co-QAU" firstAttribute="leading" secondItem="MjP-PN-g7j" secondAttribute="leading" constant="20" id="A1O-59-7oF"/>
+                            <constraint firstItem="MjP-PN-g7j" firstAttribute="trailing" secondItem="e49-x7-JeB" secondAttribute="trailing" constant="20" id="HAe-bM-8Dz"/>
+                            <constraint firstItem="kfE-VG-wAR" firstAttribute="centerY" secondItem="N87-6x-Cqe" secondAttribute="centerY" id="NZd-v2-wYk"/>
+                            <constraint firstItem="kfE-VG-wAR" firstAttribute="leading" secondItem="MjP-PN-g7j" secondAttribute="leading" constant="20" id="VqY-ep-RbB"/>
+                            <constraint firstItem="e49-x7-JeB" firstAttribute="leading" secondItem="kfE-VG-wAR" secondAttribute="trailing" constant="20" id="gQU-JA-hY0"/>
+                            <constraint firstAttribute="bottom" secondItem="e49-x7-JeB" secondAttribute="bottom" constant="20" id="qWZ-ly-UK9"/>
+                            <constraint firstItem="Ewa-co-QAU" firstAttribute="top" secondItem="MjP-PN-g7j" secondAttribute="top" constant="20" id="wJr-du-EW0"/>
+                            <constraint firstItem="e49-x7-JeB" firstAttribute="top" secondItem="MjP-PN-g7j" secondAttribute="top" constant="20" id="xZF-jn-fw0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ces-uT-Daq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5AM-zb-FnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="92"/>
+            <point key="canvasLocation" x="811.84834123222743" y="90.769230769230759"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="memories" catalog="system" width="128" height="110"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <image name="yagom_symbol" width="166.66667175292969" height="160.33332824707031"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
